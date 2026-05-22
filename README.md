@@ -1,8 +1,12 @@
 **Cyber News Digest – Automated Cybersecurity Intelligence Feed**
 
+
+
 **Overview**
 Cyber News Digest is an automated system that collects, processes, and delivers a curated cybersecurity news summary directly to your inbox. It runs entirely in the cloud using GitHub Actions, requiring no local machine or manual intervention once deployed.
 This project demonstrates secure automation, workflow orchestration, Python development, and operational reliability — skills relevant to modern security engineering and applied AI safety roles.
+
+
 
 **Features**
 * Automated Cybersecurity News Collection  
@@ -19,6 +23,8 @@ Uses GitHub Secrets to store email credentials safely.
 
 * Fully Reproducible  
 Anyone can fork the repo, add secrets, and run their own automated digest.
+
+
 
 **Architecture**
 1. Python Script (cyber_news_digest.py)
@@ -38,12 +44,15 @@ Anyone can fork the repo, add secrets, and run their own automated digest.
 * EMAIL_PASSWORD
 * RECIPIENT
 
+
+
 **Schedule**
 The digest runs twice per day using GitHub Actions cron:
 
 Code
 5 7 * * *   # 08:05 UK time
 5 19 * * *  # 20:05 UK time
+
 
 
 **Setup Instructions**
